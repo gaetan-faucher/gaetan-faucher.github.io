@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Berghan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: normal swap;
+    src: url(FONT/Berghan/Font/Berghan-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Fahkwang';
+    font-style: normal;
+    font-weight: normal;
+    src: url(FONT/Fahkwang/Fahkwang-Regular.ttf) format('ttf');
+}
+
+/*@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(700);
+    }
+}*/
+
+body {
+    margin: 0;
+}
+
+body.index {
+    background-color: rgb(238, 251, 255);
+}
+
+body.jpo {
+    background-color: #00FF00;
+}
+
+body.Tomofholland {
+    background-color: #FFD6AE;
+}
+
+body.Vacances {
+    background-color: #FFBD29;
+}
+
+body.La-villette {
+    background-color: #E82828;
+}
+
+body.Workshop-ae {
+    background-color: #A4D6FF;
+}
+
+body.gigantisme {
+    background-color: #22DD65;
+}
+
+body.a-propos {
+    background-color: #000000;
+}
+
+.header {
+    z-index: 20;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    gap: 24px;
+    position: sticky;
+    top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+a.egg {
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    text-align: right;
+    font-family: 'Fahkwang';
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: block;
+}
+
+footer  {
+    margin-top: 82px;
+    background-color: #ff7b00;;
+    padding:24px;
+    font-size: 3em;
+}
+
+.highlight {
+    color: #000000;
+}
+
+.highlight:hover {
+    color: rgb(0, 0, 255);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.a-propos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 40px;
+}
+
+.projects {
+    z-index: 10;
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 40px;
+
+}
+
+.projects a {
+    border:2px solid rgb(0, 0, 0);
+    padding:12px;
+    border-radius: 40px;
+    display: block;
+}
+.projects a.jpo:hover {
+    background-color: #00FF00;
+}
+
+.projects a.toh:hover {
+    background-color: #FFD6AE;
+}
+
+.projects a.vac:hover {
+    background-color: #FFBD29;
+}
+
+.projects a.vill:hover {
+    background-color: #E82828;
+}
+
+.projects a.gig:hover {
+    background-color: #22DD65;
+}
+
+.projects a.ae:hover {
+    background-color: #A4D6FF;
+}
+
+.projects a:nth-of-type(1){ transform: translate(10px, 10px);}
+.projects a:nth-of-type(2){ transform: translate(-100px, 10px);}
+.projects a:nth-of-type(3){ transform: translate(30px, 30px);}
+.projects a:nth-of-type(4){ transform: translate(15px, 10px);}
+.projects a:nth-of-type(5){ transform: translate(150px, 40px);}
+.projects a:nth-of-type(6){ transform: translate(-70px, -30px);}
+
+
+.jpo {
+    grid-column: span 2;
+}
+
+div.intro {
+    grid-column: 1/3;
+}
+
+div.conception {
+    grid-column: 3/5;
+}
+
+div.notice {
+    grid-column: 5/7;
+}
+
+.insectes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 40px;
+}
+
+.vac1 {
+    grid-column: span 6;
+}
+
+.vac2 {
+    grid-column: span 3;
+}
+
+.vac3 {
+    grid-column: span 3;
+}
+
+.vac4 {
+    grid-column: 4/7;
+}
+
+.insect1 {
+    grid-column: span 4;
+}
+
+.insect2 {
+    grid-column: span 2;
+}
+
+.insect3 {
+    grid-column: span 2;
+}
+
+img {
+    width: 100%;
+}
+
+.moving-image {
+    padding-top: 5px;
+    padding-right: 600px;
+    height: 50px;
+    width: 36px;
+    /*animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: right;*/
+}
+
+.instagram {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.instagram:hover {
+    content: url(IMG/RESEAUX/Instagram-orange.png);
+}
+
+.fleche-retour {
+    width: 38px;
+}
+
+.fleche-retour:hover {
+    content: url(ELEMENTS/fleche-retpur-bleu.png);
+}
+
+h1, h3 {
+    background-color: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Berghan';
+}
+
+h1 {
+    position: static;
+    font-size: 200px;
+    line-height: 150px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.index h1 {
+    text-align: center;
+}
+
+.projects h1 {
+    grid-column: 1/-1;
+}
+
+.insectes h1 {
+    position: static;
+    grid-column: span 6;
+}
+
+.about h1 {
+    color: #ffffff;
+    padding-top: 50px;
+    margin-top: 25px;
+}
+
+.about h2 {
+    color: #ffffff;
+}
+
+.about p {
+    color: #ffffff;
+}
+
+.Tomofholland h1 {
+    font-size: 170px;
+    grid-column: 1/-1;
+}
+
+h2 {
+    font-family: 'Berghan';
+    line-height: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.insectes h2 {
+    grid-column: span 3;
+}
+
+p {
+    font-family: 'Fahkwang';
+    break-inside: avoid-column;
+}
+
+.insectes p {
+    grid-column: span 3;
+}
+
+h3 {
+    font-family: 'Berghan';
+    font-style: normal;
+    font-size: 65px;
+    line-height: 60px;
+    color: #e40000;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff7b00;
+}
