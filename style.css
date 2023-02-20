@@ -243,7 +243,7 @@ ul {
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/5;
-    align-content: center;
+    /*align-content: center;*/
 }
 
 div.intro {
@@ -311,6 +311,7 @@ img {
 
 .profil {
     display: block;
+    padding: 10px 10px 0px 10px;
     border-radius: 20px;
     background-color: #ff7b00;
 }
@@ -397,6 +398,7 @@ h1 {
 .about h1 {
     color: #000000;
     margin-top: 25px;
+    padding-bottom: 20px;
     grid-column: 1/6;
 }
 
