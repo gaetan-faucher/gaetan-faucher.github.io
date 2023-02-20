@@ -113,7 +113,9 @@ footer {
 }
 
 .guy-tel {
+    padding-left: 30%;
     max-height: 2.9em;
+    max-width: 2em;
     transform: translate(1em, 0);
 }
 
@@ -226,19 +228,29 @@ ul {
     padding: 10px;
     border-radius: 40px;
     display: block;
-    transform: translate(-63px, 23px);
+    transform: translate(-63px, 40px);
 }
 
 .ae:hover {
     background-color: #A4D6FF;
 }
 
+.about-infos {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 40px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/5;
+}
+
 div.intro {
-    grid-column: 1/3;
+    grid-column: 1/2;
 }
 
 div.conception {
-    grid-column: 3/5;
+    grid-column: 2/3;
 }
 
 div.notice {
@@ -257,6 +269,7 @@ div.notice {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 40px;
+    object-fit: cover;
 }
 
 .vac1 {
@@ -293,6 +306,39 @@ img {
 
 .guy-about {
     grid-row: span 2;
+}
+
+.infos {
+    grid-column: 1/2;
+}
+
+.profil {
+    display: block;
+    padding: 10px 10px 0px 10px;
+    border-radius: 20px;
+    background-color: #ff7b00;
+
+}
+
+.head {
+    position: sticky;
+}
+
+.infos-details {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 40px;
+    display: block;
+    grid-column: span 2;
+    object-fit: cover;
+}
+
+.infos-details p {
+    margin-bottom: 15px;
+}
+
+.interets {
+    grid-column: 1/2;
 }
 
 .moving-image {
@@ -355,6 +401,7 @@ h1 {
 
 .about h2 {
     color: #000000;
+    margin-top: 0;
 }
 
 .about p {
