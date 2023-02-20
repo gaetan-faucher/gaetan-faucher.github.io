@@ -324,17 +324,27 @@ img {
     position: sticky;
 }
 
+.mur {
+    display: block;
+    border-radius: 20px;
+    background-color: #ff7b00;
+}
+
 .infos-details {
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
     border-radius: 40px;
     display: block;
     grid-column: span 2;
-    object-fit: cover;
 }
 
 .infos-details p {
     margin-bottom: 15px;
+}
+
+.jumelles {
+    grid-column: -4/-2;
+    transform: translate(0, 80px);
 }
 
 .interets {
