@@ -15,8 +15,6 @@
 
 body {
     margin: 0;
-    height: 100vh;
-    cursor: none;
 }
 
 body.index {
@@ -192,7 +190,11 @@ ul {
 }
 
 .jpo:hover {
-    background-color: #00FF00;
+    border: 2px solid rgb(0, 0, 255);
+}
+
+.jpo:hover p {
+    color: rgb(0, 0, 255);
 }
 
 .toh {
@@ -205,7 +207,11 @@ ul {
 }
 
 .toh:hover {
-    background-color: #FFD6AE;
+    border: 2px solid rgb(0, 0, 255);
+}
+
+.toh:hover p {
+    color: rgb(0, 0, 255);
 }
 
 .vac {
@@ -217,7 +223,11 @@ ul {
 }
 
 .vac:hover {
-    background-color: #FFBD29;
+    border: 2px solid rgb(0, 0, 255);
+}
+
+.vac:hover p {
+    color: rgb(0, 0, 255);
 }
 
 .vill {
@@ -229,7 +239,11 @@ ul {
 }
 
 .vill:hover {
-    background-color: #E82828;
+    border: 2px solid rgb(0, 0, 255);
+}
+
+.vill:hover p {
+    color: rgb(0, 0, 255);
 }
 
 .gig {
@@ -241,7 +255,11 @@ ul {
 }
 
 .gig:hover {
-    background-color: #22DD65;
+    border: 2px solid rgb(0, 0, 255);
+}
+
+.gig:hover p {
+    color: rgb(0, 0, 255);
 }
 
 .ae {
@@ -253,7 +271,11 @@ ul {
 }
 
 .ae:hover {
-    background-color: #A4D6FF;
+    border: 2px solid rgb(0, 0, 255);
+}
+
+.ae:hover p {
+    color: rgb(0, 0, 255);
 }
 
 .about-infos {
