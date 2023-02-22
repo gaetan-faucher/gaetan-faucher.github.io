@@ -14,7 +14,10 @@
 }
 
 body {
+    height: 100%;
+    width: 100%;
     margin: 0;
+    overflow-x: hidden; /*pour ne pas agrandir bdy quand une image est trop large*/
 }
 
 body.index {
@@ -93,6 +96,8 @@ footer {
     background-color: #ff7b00;
     padding: 24px;
     font-size: 3em;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .contenu-footer {
@@ -290,11 +295,11 @@ ul {
 }
 
 div.intro {
-    grid-column: 1/2;
+    grid-column: 1/3;
 }
 
 div.conception {
-    grid-column: 2/3;
+    grid-column: 3/5;
 }
 
 div.notice {
@@ -322,6 +327,30 @@ div.notice {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 40px;
+}
+
+.toh1 {
+    grid-column: 1/-1;
+}
+
+.toh2 {
+    grid-column: 1/5;
+}
+
+.toh3 {
+    grid-column: 5/7;
+    transform: translate(6vw);
+    width: 101%;
+    height: auto;
+}
+
+.toh4 {
+    grid-column: 1/3;
+    transform: translate(0, 8vw);
+}
+
+.toh5 {
+    grid-column: 3/7;
 }
 
 .vac1 {
@@ -354,6 +383,7 @@ div.notice {
 
 img {
     width: 100%;
+    border-radius: 40px;
 }
 
 .guy-about {
