@@ -10,7 +10,7 @@
     font-family: 'Fahkwang';
     font-style: normal;
     font-weight: normal;
-    src: url(FONT/Fahkwang/Fahkwang-Regular.ttf) format('ttf');
+    src: url(FONT/Fahkwang/Fahkwang-Regular.ttf) format('truetype');
 }
 
 body {
@@ -129,7 +129,8 @@ footer {
 }
 
 .guy-tel {
-    padding-left: 14%;
+    margin-left: 9%;
+    margin-right: 9%;
     max-height: 2.9em;
     max-width: 13vw;
     transform: translate(1em, 0);
