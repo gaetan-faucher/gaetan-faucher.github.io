@@ -122,7 +122,7 @@ footer {
 }
 
 .bloc-footer-credits p {
-    text-align: right;
+    text-align: end;
     font-size: 18px;
     margin: 0;
     grid-column: 2/3;
@@ -145,6 +145,18 @@ footer {
 
 .highlight-contacts {
     color: #ff7b00;
+}
+
+.credits {
+    font-size: 1.3em;
+    grid-column: 2/4;
+    transform: translate(0, 5.6vh);
+}
+
+.highlight-credits {
+    font-family: 'Berghan';
+    color: #ff7b00;
+    font-size: 5.2vw;
 }
 
 .highlight-contacts:hover {
@@ -300,7 +312,6 @@ ul {
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/5;
-    /*align-content: center;*/
 }
 
 .intro {
@@ -345,7 +356,7 @@ div.notice {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin: 40px;
+    margin: 20px;
 }
 
 .about {
@@ -467,9 +478,9 @@ img {
 
 .guy-contacts img {
     float: right;
-    width: 60%;
+    width: 50%;
     height: auto;
-    transform: translate(90px, -130px);
+    transform: translate(1vw, -16vh);
 }
 
 .guy-contacts p {
@@ -670,7 +681,7 @@ p {
 
 p.follow {
     font-family: 'Berghan';
-    font-size: 80px;
+    font-size: 5.2vw;
     line-height: 65px;
     color: #e40000;
     font-weight: 400;
