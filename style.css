@@ -9,7 +9,6 @@
 @font-face {
     font-family: 'Fahkwang';
     font-style: normal;
-    font-weight: normal;
     src: url(FONT/Fahkwang/Fahkwang-Regular.ttf) format('truetype');
 }
 
@@ -405,10 +404,12 @@ ul {
 
 .intro-blanc h2 {
     color: rgb(255, 255, 255);
+    font-weight: 400;
 }
 
 .conception {
     grid-column: 3/5;
+    font-weight: 400;
 }
 
 .conception-blanc {
@@ -418,6 +419,7 @@ ul {
 
 .conception-blanc h2 {
     color: rgb(255, 255, 255);
+    font-weight: 400;
 }
 
 .conception-blanc-large {
@@ -922,6 +924,7 @@ h1 {
 .about h2 {
     color: #000000;
     margin-top: 0;
+    font-weight: 400;
 }
 
 .about p {
