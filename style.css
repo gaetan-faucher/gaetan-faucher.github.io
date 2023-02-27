@@ -883,6 +883,7 @@ h1 {
     padding-top: 0;
     padding-bottom: 0;
     margin: 4vh 0 4vh 0;
+    cursor: default;
 }
 
 .projects h1 {
