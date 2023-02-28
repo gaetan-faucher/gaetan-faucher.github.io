@@ -35,6 +35,7 @@ nav {
     border-radius: 100px;
     text-align: right;
     font-family: 'Fahkwang';
+    font-size: 18px;
     display: grid;
     grid-template-columns: 1fr auto auto auto auto;
     list-style: none;
@@ -75,17 +76,17 @@ nav {
 
 .page-index {
     grid-column: 3/4;
-    padding: 20px;
+    padding: 17px;
 }
 
 .page-about {
     grid-column: 5/6;
-    padding: 20px;
+    padding: 17px;
 }
 
 .page-contacts {
     grid-column: 6/7;
-    padding: 20px;
+    padding: 17px;
 }
 
 .page-insta {
@@ -460,7 +461,6 @@ div.notice {
 
 .explications {
     font-family: 'Fahkwang';
-    font-size: 2.1vw;
     color: rgb(255, 255, 255);
     grid-column: span 2;
     align-self: end;
@@ -945,7 +945,8 @@ h1 {
 
 h2 {
     font-family: 'Berghan';
-    line-height: 25px;
+    font-size: 27px;
+    line-height: 30px;
     color: rgb(0, 0, 0);
 }
 
@@ -957,7 +958,7 @@ p {
     font-family: 'Fahkwang';
     break-inside: avoid-column;
     margin: 0;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .insectes p {
