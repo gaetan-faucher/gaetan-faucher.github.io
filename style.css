@@ -414,6 +414,28 @@ ul {
     transition: 0.25s;
 }
 
+.lama {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    grid-column: 4/7;
+    grid-row: 7/8;
+}
+
+.lama:hover {
+    border: 2px solid rgb(0, 0, 255);
+    transition: 0.25s;
+}
+
+.lama:hover p {
+    color: rgb(0, 0, 255);
+    transition: 0.25s;
+}
+
 .about-infos {
     border: 2px solid rgb(255, 255, 255);
     padding: 20px;
@@ -495,6 +517,14 @@ div.notice {
     color: rgb(255, 255, 255);
     grid-column: span 2;
     align-self: end;
+}
+
+.lamaexplications {
+    font-family: 'Fahkwang';
+    color: rgb(255, 255, 255);
+    align-self: end;
+    grid-column: -7/-5;
+    grid-row: 11/12;
 }
 
 .jpo1 {
@@ -859,6 +889,24 @@ div.notice {
     grid-column: 1/-1;
     grid-row: 15/16;
     border-radius: 40px;
+}
+
+.lama1 {
+    grid-column: 1/-1;
+    grid-row: 3/7;
+    border-radius: 40px;
+}
+
+.lama2 {
+    grid-column: 1/4;
+    grid-row: 6/9;
+    transform: rotate(8deg) translate(50px, 190px);
+}
+
+.lama3 {
+    grid-column: 4/7;
+    grid-row: 8/13;
+    transform: rotate(-5deg) translate(0px, 10px);
 }
 
 video {
