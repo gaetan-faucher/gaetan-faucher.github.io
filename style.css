@@ -939,12 +939,18 @@ div.notice {
 }
 
 .solar2 {
-    grid-column: 1/-1;
+    grid-column: 1/4;
     grid-row: 6/9;
     border-radius: 40px;
 }
 
 .solar3 {
+    grid-column: 4/7;
+    grid-row: 6/9;
+    border-radius: 40px;
+}
+
+.solar4 {
     grid-column: 1/-1;
     grid-row: 9/12;
     border-radius: 40px;
