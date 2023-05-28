@@ -172,6 +172,15 @@ footer {
     transition: 0.25s;
 }
 
+.highlight-special {
+    color: #e40000;
+}
+
+.highlight-special:hover {
+    color: #ff7b00;
+    transition: 0.25s;
+}
+
 .highlight-contacts {
     color: #ff7b00;
 }
@@ -963,6 +972,15 @@ img {
     grid-row: 2/4;
 }
 
+.txt-credits {
+    font-family: 'Berghan';
+    color: #e40000;
+    font-size: 8vw;
+    line-height: 0.9em;
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
 .guy-plane {
     grid-column: 4/7;
     grid-row: 1/4;
@@ -1179,6 +1197,18 @@ p.follow {
     font-weight: 400;
     margin: 0;
     padding: 0;
+}
+
+p.follow-credits {
+    font-family: 'Berghan';
+    font-size: 5.2vw;
+    line-height: 65px;
+    color: #e40000;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    grid-column: 1/5;
+    grid-row: 3/5;
 }
 
 a {
