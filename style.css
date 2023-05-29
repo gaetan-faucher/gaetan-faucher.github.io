@@ -684,6 +684,7 @@ div.notice {
 
 .vill1 {
     grid-column: 1/7;
+    border-radius: 40px;
 }
 
 .vill2 {
