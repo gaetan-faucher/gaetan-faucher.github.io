@@ -18,15 +18,20 @@
 
 <body class="open-door">
   <header class="header">
-    <nav class="header-projects">
-      <li class="fleche-retour"><a href="index.html">←</a></li>
-      <li><a class="egg" href="a-propos.html"><img class="moving-image" src="bonhomme/bonhomme.gif"
-            alt="orange qui court"></a></li>
-      <li class="page-index"><a href="index.html">Projets</a></li>
-      <li class="page-about"><a href="a-propos.html">À propos</a></li>
-      <li class="page-contacts"><a href="contacts.html">Contacts</a></li>
-      <li class="page-insta"><a class="instagram" href="https://www.instagram.com/fugitif_studio/"><img
-            src="IMG/RESEAUX/Instagram.png"></a></li>
+    <nav>
+        <p class="fleche-retour"><a href="index.html">←</a></p>
+        <a class="egg" href="a-propos.html"><img class="moving-image" src="bonhomme/bonhomme.gif"
+              alt="orange qui court"></a></li>
+        <div class="page-links">
+          <ul>
+            <li class="page-index"><a href="index.html">Projets</a></li>
+            <li class="page-about"><a href="a-propos.html">À propos</a></li>
+            <li class="page-contacts"><a href="contacts.html">Contacts</a></li>
+            <li class="page-insta"><a class="instagram" href="https://www.instagram.com/fugitif_studio/"><img src="IMG/RESEAUX/Instagram.png"></a></li>
+          </ul>
+        </div> 
+
+      <img class="menu-hamburger-projects" src="ELEMENTS/bttn-burger-menu.svg" alt="menu hamburger">
     </nav>
   </header>
   <div class="sombre">
@@ -48,5 +53,14 @@
     <img class="asvm4" src="IMG/ASVM/ASVM_fresque_murale_5000x3000mm-zoom-head-ball.jpg" alt="Zoom sur un détail dans le public">
 </div>
 </body>
+
+<script>
+  const menuHamburger = document.querySelector(".menu-hamburger-projects")
+  const pageLinks = document.querySelector(".page-links")
+
+  menuHamburger.addEventListener('click',()=>{
+  pageLinks.classList.toggle('mobile-menu')
+  })
+</script>
 
 </html>

@@ -19,14 +19,18 @@
 <body>
   <header class="header">
     <nav>
-      <li><a class="egg" href="a-propos.html"><img class="moving-image" src="bonhomme/bonhomme.gif"
-            alt="orange qui court"></a>
-      </li>
-      <li class="page-index"><a href="index.html">Projets</a></li>
-      <li class="page-about"><a href="a-propos.html">À propos</a></li>
-      <li class="page-contacts"><a href="contacts.html">Contacts</a></li>
-      <li class="page-insta"><a class="instagram" href="https://www.instagram.com/fugitif_studio/"><img
-            src="IMG/RESEAUX/Instagram.png"></a></li>
+        <a class="egg" href="a-propos.html"><img class="moving-image" src="bonhomme/bonhomme.gif"
+              alt="orange qui court"></a></li>
+        <div class="page-links">
+          <ul>
+            <li class="page-index"><a href="index.html">Projets</a></li>
+            <li class="page-about"><a href="a-propos.html">À propos</a></li>
+            <li class="page-contacts"><a href="contacts.html">Contacts</a></li>
+            <li class="page-insta"><a class="instagram" href="https://www.instagram.com/fugitif_studio/"><img src="IMG/RESEAUX/Instagram.png"></a></li>
+          </ul>
+        </div> 
+
+      <img class="menu-hamburger" src="ELEMENTS/bttn-burger-menu.svg" alt="menu hamburger">
     </nav>
   </header>
   <div class="contacts">
@@ -50,5 +54,14 @@
     </div>
   </footer>
 </body>
+
+<script>
+  const menuHamburger = document.querySelector(".menu-hamburger")
+  const pageLinks = document.querySelector(".page-links")
+
+  menuHamburger.addEventListener('click',()=>{
+  pageLinks.classList.toggle('mobile-menu')
+  })
+</script>
 
 </html>
