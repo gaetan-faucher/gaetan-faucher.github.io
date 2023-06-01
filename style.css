@@ -1630,11 +1630,13 @@ a {
     .txt-contacts {
         font-size: 16vw;
         grid-column: 1/7;
+        grid-row: 2/3;
+        transform: translate(0, 100px);
     }
 
     .guy-plane {
         grid-column: 1/-1;
-        grid-row: 4/6;
+        grid-row: 9/11;
         transform: translate(0, -10px);
     }
 }
