@@ -598,7 +598,7 @@ div.notice {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin: 20px;
+    margin: 40px;
 }
 
 .about {
@@ -1572,8 +1572,8 @@ a {
 
 
     .about {
-        grid-gap: 15px;
-        margin: 30px;
+        grid-gap: 20px;
+        margin: 20px;
     }
 
     .about h1 {
@@ -1628,11 +1628,16 @@ a {
         transform: translate(0, 15px);
     }
 
+
+
+    .contacts {
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
     .footer-contacts {
         padding-bottom: 10px;
     }
-
-
 
     .txt-contacts {
         font-size: 16vw;
@@ -1662,6 +1667,6 @@ a {
 
     .guy-tree {
         grid-column: 1/-1;
-        grid-row: 17/18;
+        grid-row: 16/17;
     }
 }
