@@ -1166,9 +1166,14 @@ img {
     z-index: 15;
     margin-left: 0vw;
     margin-bottom: 5px;
-    /*position: absolute;
-    left: 25px;
-    top: 5px;*/
+    height: 50px;
+    width: 36px;
+}
+
+.orange-run {
+    z-index: 15;
+    margin-left: 35.5vw;
+    margin-bottom: 5px;
     height: 50px;
     width: 36px;
 }
@@ -1558,7 +1563,8 @@ a {
     }
 
     .guy-tel {
-        max-width: 15vw;
+        margin-right: 0;
+        max-width: 22vw;
         float: left;
         transform: translate(-38px, 0px);
     }
@@ -1571,11 +1577,14 @@ a {
     }
 
     .about h1 {
-        font-size: 15vw;
-        text-align: center;
         margin-top: 25px;
-        grid-column: 1/-1;
         margin: 1.4vw 0 2vw 0;
+    }
+
+    h1 {
+        font-size: 16vw;
+        text-align: center;
+        grid-column: 1/-1;
     }
 
     .guy-about {
@@ -1610,5 +1619,22 @@ a {
 
         grid-column: -6/-2;
         transform: translate(0, 15px);
+    }
+
+    .footer-contacts {
+        padding-bottom: 10px;
+    }
+
+
+
+    .txt-contacts {
+        font-size: 16vw;
+        grid-column: 1/7;
+    }
+
+    .guy-plane {
+        grid-column: 1/-1;
+        grid-row: 4/6;
+        transform: translate(0, -10px);
     }
 }
