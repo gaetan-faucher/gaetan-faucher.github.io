@@ -1577,8 +1577,11 @@ a {
     }
 
     .about h1 {
+        font-size: 15vw;
         margin-top: 25px;
         margin: 1.4vw 0 2vw 0;
+        grid-column: 1/-1;
+
     }
 
     .contacts h1 {
