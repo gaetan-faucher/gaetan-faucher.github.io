@@ -1215,7 +1215,7 @@ h3 {
     line-height: 10vw;
     color: rgb(0, 0, 0);
     font-weight: 400;
-    animation: scrollTxt 7s linear infinite;
+    animation: scrollTxt 7.5s linear infinite;
     margin: 4vw 0 2vw 0;
 }
 
@@ -1385,6 +1385,10 @@ a {
     text-decoration: none;
 }
 
+
+
+
+
 @media screen and (max-width: 600px) {
 
     .home {
@@ -1449,11 +1453,11 @@ a {
     .txt {
         font-size: 33vw;
         line-height: 32vw;
-        animation: scrollTxt 5s linear infinite;
+        animation: scrollTxt 6s linear infinite;
     }
 
     .sous-titre {
-        font-size: 6vw;
+        font-size: 7vw;
         line-height: 0.8em;
     }
 
