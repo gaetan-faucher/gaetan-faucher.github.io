@@ -84,6 +84,7 @@ nav {
 }
 
 .fleche-retour {
+    z-index: 46;
     width: 38px;
     grid-column: 1/2;
     font-family: 'Berghan';
