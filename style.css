@@ -1704,6 +1704,7 @@ a {
     .guy-tree {
         grid-column: 1/-1;
         grid-row: 16/17;
+        transform: translateX(1vw);
     }
 
 
