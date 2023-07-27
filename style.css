@@ -17,7 +17,7 @@ body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
-    /*pour ne pas agrandir bdy quand une image est trop large*/
+    /*pour ne pas agrandir body quand une image est trop large*/
 }
 
 .header {
@@ -36,9 +36,6 @@ header .page-links ul {
     z-index: 50;
     display: none;
     margin: 30px, 10px, 10px, 10px;
-    /*position: absolute;
-    top: 19px;
-    right: 25px;*/
     width: 35px;
 }
 
@@ -46,9 +43,6 @@ header .page-links ul {
     z-index: 45;
     display: none;
     margin: 30px, 10px, 10px, 10px;
-    /*position: absolute;
-    top: 19px;
-    right: 25px;*/
     width: 35px;
 }
 
@@ -245,6 +239,7 @@ ul {
     font-family: 'Berghan';
     font-size: 3vw;
     line-height: 0.8em;
+    padding-bottom: 5px;
 }
 
 .resume-button {
@@ -523,7 +518,7 @@ ul {
     justify-content: center;
     background-color: white;
     grid-column: 2/4;
-    grid-row: 9/11;
+    grid-row: 10/11;
 }
 
 .asvm:hover {
