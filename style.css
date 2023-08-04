@@ -876,6 +876,7 @@ ul {
     height: calc(100vw * 0.5);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/TOH/TOH-business-card.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
@@ -884,6 +885,15 @@ ul {
     grid-row: 1/2;
 
 }
+
+.toh:hover {
+    border-radius: 0px;
+}
+
+.toh:hover ~ .toh {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
+  }
 
 .jpo::before {
     content: "";
@@ -908,6 +918,7 @@ ul {
     height: calc(100vw * 0.35);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/JPO/JPO-top.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
@@ -915,6 +926,15 @@ ul {
     grid-column: 1/4;
     grid-row: 2/3;
 }
+
+.jpo:hover {
+    border-radius: 0px;
+}
+
+.jpo:hover ~ .jpo {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
+  }
 
 .vac::before {
     content: "";
@@ -939,12 +959,22 @@ ul {
     height: calc(100vw * 0.35);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/6VACANCES/6-VAC_paquet.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     grid-column: 4/-1;
     grid-row: 2/3;
+}
+
+.vac:hover {
+    border-radius: 0px;
+}
+
+.vac:hover ~ .vac {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
 }
 
 .vill::before {
@@ -970,12 +1000,22 @@ ul {
     height: calc(100vw * 0.5);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/VILLETTE/VILL-web.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     grid-column: 1/5;
     grid-row: 3/5;
+}
+
+.vill:hover {
+    border-radius: 0px;
+}
+
+.vill:hover ~ .vill {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
 }
 
 .ae::before {
@@ -1001,12 +1041,22 @@ ul {
     height: calc(100vw * 0.24);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/AE/COUV_gigantisme.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     grid-column: 5/7;
     grid-row: 3/4;
+}
+
+.ae:hover {
+    border-radius: 0px;
+}
+
+.ae:hover ~ .ae {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
 }
 
 .moll::before {
@@ -1032,12 +1082,22 @@ ul {
     height: calc(100vw * 0.35);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/MOLESKINE/cover-notebook.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     grid-column: 1/-1;
     grid-row: 6/7;
+}
+
+.moll:hover {
+    border-radius: 0px;
+}
+
+.moll:hover ~ .moll {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
 }
 
 .gig::before {
@@ -1063,12 +1123,22 @@ ul {
     height: calc(100vw * 0.5);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/INSECTES/COLLECTION_open_1b.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     grid-column: 1/-1;
     grid-row: 5/6;
+}
+
+.gig:hover {
+    border-radius: 0px;
+}
+
+.gig:hover ~ .gig {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
 }
 
 .nes::before {
@@ -1094,12 +1164,22 @@ ul {
     height: calc(100vw * 0.5);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/NESTEA/NES-Can-couv.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     grid-column: 3/-1;
     grid-row: 7/9;
+}
+
+.nes:hover {
+    border-radius: 0px;
+}
+
+.nes:hover ~ .nes {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
 }
 
 .lama::before {
@@ -1125,12 +1205,22 @@ ul {
     height: calc(100vw * 0.24);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/LAMA/LAMA_couv.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     grid-column: 1/3;
     grid-row: 7/8;
+}
+
+.lama:hover {
+    border-radius: 0px;
+}
+
+.lama:hover ~ .lama {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
 }
 
 .solar::before {
@@ -1156,12 +1246,22 @@ ul {
     height: calc(100vw * 0.24);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/SOLAR/SOLAR_billboard-1.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     grid-column: 1/3;
     grid-row: 8/9;
+}
+
+.solar:hover {
+    border-radius: 0px;
+}
+
+.solar:hover ~ .solar {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
 }
 
 .tdc::before {
@@ -1187,12 +1287,22 @@ ul {
     height: calc(100vw * 0.24);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/TDC/TDC_background.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     grid-column: 5/7;
     grid-row: 4/5;
+}
+
+.tdc:hover {
+    border-radius: 0px;
+}
+
+.tdc:hover ~ .tdc {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
 }
 
 .asvm::before {
@@ -1218,6 +1328,7 @@ ul {
     height: calc(100vw * 0.35);
     margin: 0 auto;
     border-radius: 25px;
+    transition: border-radius 0.5s, border-radius 0.3s;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
     background-image: url("IMG/ASVM/couv-asvm.jpg");
     background-size: cover; /* Redimensionner l'image pour qu'elle couvre tout le div */
@@ -1226,21 +1337,30 @@ ul {
     grid-row: 9/10;
 }
 
+.asvm:hover {
+    border-radius: 0px;
+}
+
+.asvm:hover ~ .asvm {
+    border-radius: 5px;
+    transition: border-radius 0.3s;
+}
+
 .about-infos {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     height: 500px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 25px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     overflow: hidden; /* Masquer le contenu qui dépasse du div avec border-radius */
-    background-image: url("IMG/A-PROPOS/illustration-a-propos-guy.png");
+    background-image: url("IMG/A-PROPOS/illustration-a-propos-guy.jpg");
     background-size: contain; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-repeat: no-repeat;
     background-position: bottom;
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
 }
 
 .presentation {
@@ -1254,6 +1374,7 @@ ul {
 
 .presentation p {
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .intro {
@@ -1849,18 +1970,19 @@ img {
 
 .profil {
     display: block;
-    margin-bottom: 20px;
+    margin: 20px;
+    margin-top: 0px;
     border-radius: 13px;
     width: 28vw;
+    min-width: 300px;
     height: calc(100vw * 0.17);
-    transform: translate(1.5vw, 0vw);
+    min-height: 210px;
     background-image: url("IMG/A-PROPOS/photo-profil-bitmap-red.png");
     background-size: 50%; /* Redimensionner l'image pour qu'elle couvre tout le div */
     background-position: center;
     background-color: rgba(255, 145, 0, 0.1);
         backdrop-filter: blur(5px);
     background-repeat: no-repeat;
-    grid-column: 1/3;
 }
 
 .mur {
@@ -2099,6 +2221,10 @@ a {
 
     .custom-cursor, .custom-cursor-follower {
         display: none;
+    }
+
+    body {
+        cursor: auto;
     }
 
     .home {
@@ -2467,9 +2593,7 @@ a {
     .about-infos {
         position: relative;
         border-radius: 25px;
-        grid-gap: 15px;
-        padding: 15px;
-        grid-template-columns: 1fr;
+        grid-gap: 20px;
         grid-column: 1/7;
         grid-row: 2/3;
     }
@@ -3116,6 +3240,19 @@ a {
         grid-row: 8/9;
         border-radius: 25px;
         transform: translate(0px, 0px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .about-infos .profil {
+        width: 91%;
+        height: calc(100vw * 0.45);
     }
 }
 
