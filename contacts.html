@@ -17,6 +17,10 @@
 </head>
 
 <body>
+
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
   <header class="header">
     <nav>
         <a class="egg" href="a-propos.html"><img class="orange-run" src="bonhomme/bonhomme.gif"
@@ -42,19 +46,14 @@
   </div>
 
   </div>
-  <footer class="footer-contacts">
-    <div class="contenu-footer">
-      <div class="bloc-footer-follow">
-        <p class="follow">POUR CONNAÎTRE LA SUITE DE L'HISTOIRE DIRECTION :<br> <a class="highlight"
-          href="https://www.instagram.com/fugitif_studio">INSTA</a>/<a class="highlight"
-          href="https://www.youtube.com/@fugitif_studio">YOUTUBE</a>/<a class="highlight"
-          href="https://www.linkedin.com/in/gaëtan-faucher-8234b2239/">LKDN</a>. </p>
-      </div>
-      <div class="bloc-footer-credits">
-        <img class="guy-tel" src="ELEMENTS/Orange-footer.svg" alt="Orange.">
-        <p>©2023 All right reserved <br> Made by Gaëtan Faucher<br> <a class="highlight" href="credits.html">➔ CREDITS</a></p>
-      </div>
+  <footer>
+    <div class="content-footer">
+      <a class="footer-follow-link instagram-link" href="https://www.instagram.com/fugitif_studio">INSTAGRAM →</a>
+      <a class="footer-follow-link youtube-link" href="https://www.youtube.com/@fugitif_studio">YOUTUBE →</a>
+      <a class="footer-follow-link linkedin-link" href="https://www.linkedin.com/in/gaëtan-faucher-8234b2239/">LINKEDIN →</a>
+      <a class="footer-follow-link credits-link" href="credits.html">CREDITS →</a>
     </div>
+    <p class="footer-copyright">©2023 All right reserved — Made by Gaëtan Faucher</p>
   </footer>
 </body>
 
@@ -66,5 +65,54 @@
   pageLinks.classList.toggle('mobile-menu')
   })
 </script>
+
+<!-- faire disparaître le menu header lors du scroll -->
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.onscroll = function() {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector(".header");
+
+    if (prevScrollPos > currentScrollPos) {
+      header.classList.remove("hide-header");
+    } else {
+      header.classList.add("hide-header");
+    }
+
+    prevScrollPos = currentScrollPos;
+  };
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let cursor = document.querySelector(".custom-cursor");
+    let cursorFollower = document.querySelector(".custom-cursor-follower");
+    const links = document.querySelectorAll("a.highlight, a.highlight-contacts, .instagram-link, .youtube-link, .linkedin-link, .credits-link");
+  
+    document.addEventListener('mousemove', function (e) {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      cursorFollower.style.left = e.clientX + 'px';
+      cursorFollower.style.top = e.clientY + 'px';
+    });
+  
+    links.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        cursorFollower.style.width = "80px"; // Changement de taille
+        cursorFollower.style.height = "80px"; // Changement de taille
+        cursor.style.backgroundColor = "#0000FF"; // Couleur bleue
+        cursorFollower.style.backgroundColor = "rgba(255, 255, 255, 0.2)"; // Couleur blanche
+      });
+  
+      link.addEventListener('mouseleave', () => {
+        cursorFollower.style.width = "40px"; // Retour à la taille d'origine
+        cursorFollower.style.height = "40px"; // Retour à la taille d'origine
+        cursor.style.backgroundColor = "#ff7b00"; // Retour à la couleur d'origine
+        cursorFollower.style.backgroundColor = "rgba(255, 0, 0, 0.2)"; // Retour à la couleur d'origine
+      });
+    });
+  });
+    </script>
 
 </html>

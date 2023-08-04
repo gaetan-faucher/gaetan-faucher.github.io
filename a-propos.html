@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,12 +12,16 @@
   <style>
     body {
       background-image: url('IMG/BG_website-grey.gif');
-        background-repeat:repeat;
+      background-repeat:repeat;
     }
   </style>
 </head>
 
 <body>
+
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
   <header class="header">
     <nav>
         <a class="egg" href="a-propos.html"><img class="orange-run" src="bonhomme/bonhomme.gif"
@@ -35,10 +40,10 @@
   </header>
   <div class="about">
     <h1>À PROPOS→</h1>
-    <div class="guy-about">
-      <img src="bonhomme/orange-jumelles.png" alt="orange avec des jumelles">
-    </div>
     <div class="about-infos">
+     <!-- <div class="guy-about">
+        <img src="bonhomme/orange-jumelles.png" alt="orange avec des jumelles">
+      </div> -->
       <div class="presentation">
         <h2>Gaëtan Faucher <br> (19 ans)</h2>
         <p>Je suis étudiant en DNMADE Graphisme - Image de Communication à Auguste Renoir, Paris 18e.</p>
@@ -46,7 +51,6 @@
         <p>Je recherche un stage étudiant entre le 17 juin et le 28 juillet 2023.</p> -->
       </div>
       <div class="profil">
-        <img class="tete" src="IMG/A-PROPOS/photo-profil-bitmap-red.png" alt="Photo de profil.">
       </div>
     </div>
     <div class="infos-details">
@@ -54,19 +58,19 @@
         <h2>Formations</h2>
         <p>- 2021 - 2024 DNMADE Graphisme, image de communication à l’École Auguste Renoir, PARIS (75018).</p>
         <p>- 2018 - 2021 Baccalauréat STD2A, mention Bien, Valence (26).</p>
-        <img class="mur" src="IMG/A-PROPOS/renoir-mur.png" alt="Façade de l'École Auguste Renoir à Paris.">
+        <img class="mur" src="IMG/A-PROPOS/renoir-mur.jpg" alt="Façade de l'École Auguste Renoir à Paris.">
       </div>
     </div>
     <div class="infos-details">
       <div class="experiences">
         <h2>Expériences</h2>
-        <p>- Janvier 2023 Workshop motion design sur After Effects avec Melody DaFonseca, Paris.</p>
-        <p>- Septembre 2022 Workshop fabrication d’encre naturelles et sérigrahie avec Ro Studio, Paris.</p>
-        <p>- Juin 2022 Stage d'observation à la RMNGP, Paris.</p>
-        <p>- Juin 2022 Stage d'observation avec le graphiste Félix Müller, Pantin.</p>
-        <p>- Mai 2022 Workshop typographie animée, Paris.</p>
-        <p>- 2019 stage de 2 mois à l’imprimerie Ballouhey, Saint-Marcellin (38).</p>
-        <p>- 2018 stage d’une semaine au studio d’animation Folimage, Valence (26).</p>
+        <p>- 2023 Workshop motion design sur After Effects avec Melody DaFonseca, Paris.</p>
+        <p>- 2022 Workshop fabrication d’encre naturelles et sérigrahie avec Ro Studio, Paris.</p>
+        <p>- 2022 Stage d'observation à la RMNGP, Paris.</p>
+        <p>- 2022 Stage d'observation avec le graphiste Félix Müller, Pantin.</p>
+        <p>- 2022 Workshop typographie animée, Paris.</p>
+        <p>- 2019 Stage de 2 mois à l’imprimerie Ballouhey, Saint-Marcellin (38).</p>
+        <p>- 2018 Stage d’une semaine au studio d’animation Folimage, Valence (26).</p>
       </div>
     </div>
     <div class="infos-details">
@@ -94,19 +98,14 @@
     </div>
   </div>
 
-  <footer class="footer-contacts">
-    <div class="contenu-footer">
-      <div class="bloc-footer-follow">
-        <p class="follow">POUR CONNAÎTRE LA SUITE DE L'HISTOIRE DIRECTION :<br> <a class="highlight"
-          href="https://www.instagram.com/fugitif_studio">INSTA</a>/<a class="highlight"
-          href="https://www.youtube.com/@fugitif_studio">YOUTUBE</a>/<a class="highlight"
-          href="https://www.linkedin.com/in/gaëtan-faucher-8234b2239/">LKDN</a>. </p>
-      </div>
-      <div class="bloc-footer-credits">
-        <img class="guy-tel" src="ELEMENTS/Orange-footer.svg" alt="Orange.">
-        <p>©2023 All right reserved <br> Made by Gaëtan Faucher<br> <a class="highlight" href="credits.html">➔ CREDITS</a></p>
-      </div>
+  <footer>
+    <div class="content-footer">
+      <a class="footer-follow-link instagram-link" href="https://www.instagram.com/fugitif_studio">INSTAGRAM →</a>
+      <a class="footer-follow-link youtube-link" href="https://www.youtube.com/@fugitif_studio">YOUTUBE →</a>
+      <a class="footer-follow-link linkedin-link" href="https://www.linkedin.com/in/gaëtan-faucher-8234b2239/">LINKEDIN →</a>
+      <a class="footer-follow-link credits-link" href="credits.html">CREDITS →</a>
     </div>
+    <p class="footer-copyright">©2023 All right reserved — Made by Gaëtan Faucher</p>
   </footer>
 </body>
 
@@ -118,5 +117,55 @@
   pageLinks.classList.toggle('mobile-menu')
   })
 </script>
+
+<!-- faire disparaître le menu header lors du scroll -->
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.onscroll = function() {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector(".header");
+
+    if (prevScrollPos > currentScrollPos) {
+      header.classList.remove("hide-header");
+    } else {
+      header.classList.add("hide-header");
+    }
+
+    prevScrollPos = currentScrollPos;
+  };
+</script>
+
+  <!-- Le code JavaScript pour le curseur personnalisé -->
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  let cursor = document.querySelector(".custom-cursor");
+  let cursorFollower = document.querySelector(".custom-cursor-follower");
+  const links = document.querySelectorAll("a.highlight, .instagram-link, .youtube-link, .linkedin-link, .credits-link");
+
+  document.addEventListener('mousemove', function (e) {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    cursorFollower.style.left = e.clientX + 'px';
+    cursorFollower.style.top = e.clientY + 'px';
+  });
+
+  links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      cursorFollower.style.width = "80px"; // Changement de taille
+      cursorFollower.style.height = "80px"; // Changement de taille
+      cursor.style.backgroundColor = "#0000FF"; // Couleur bleue
+      cursorFollower.style.backgroundColor = "rgba(255, 255, 255, 0.2)"; // Couleur blanche
+    });
+
+    link.addEventListener('mouseleave', () => {
+      cursorFollower.style.width = "40px"; // Retour à la taille d'origine
+      cursorFollower.style.height = "40px"; // Retour à la taille d'origine
+      cursor.style.backgroundColor = "#ff7b00"; // Retour à la couleur d'origine
+      cursorFollower.style.backgroundColor = "rgba(255, 0, 0, 0.2)"; // Retour à la couleur d'origine
+    });
+  });
+});
+  </script>
 
 </html>
