@@ -2559,6 +2559,7 @@ a {
         height: 200px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     .credits-link p {
